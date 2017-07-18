@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sort</title>
+    <script>
+        var myArray = ['mouse', 'cat', 'dog', 'human'];
+
+        function mySort(arr){
+            var newArr = arr;
+            return newArr.sort();
+        }
+
+        function bubbleSort(arr){
+            var newArr = arr;
+            for(var i = 0; i < newArr.length; i++){
+                for(var j = i+1; j < newArr.length; j++ ){
+                    if(newArr[i] > newArr[j]){
+                        var temp = '';
+                        temp = newArr[j];
+                        newArr[j] = newArr[i];
+                        newArr[i] = temp;
+                    }
+                }
+            }
+            return newArr
+        }
+        console.log(mySort(myArray));
+        console.log(bubbleSort(myArray))
+    </script>
+</head>
+<body>
+
+</body>
+</html>

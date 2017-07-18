@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array Reverser</title>
+    <script>
+        var myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        function arrayReverse(arr){
+            var newArr = [];
+            for(var i = myArray.length-1; i >= 0; i--){
+                newArr.push(myArray[i]);
+            }
+            return newArr;
+        }
+
+        document.writeln("Original array output is: " + myArray + ". Result of arrayReverse(myArray) is: " + arrayReverse(myArray));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

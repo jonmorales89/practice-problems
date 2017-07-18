@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Invert Positive Number</title>
+    <script>
+
+        function invert_negatives(num){
+            if(typeof num !== 'number'){
+                return false;
+            } else if (num <= 0) {
+                return  num;
+            } else {
+                return -num;
+            }
+        }
+
+        console.log(invert_negatives(-5));
+        console.log(invert_negatives(4000));
+        console.log(invert_negatives('puppies'));
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

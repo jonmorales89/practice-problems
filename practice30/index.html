@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Number or Array Element</title>
+    <script>
+        function random_range(num1, num2){
+            if(Array.isArray(num1)){
+                var min = Math.ceil((num1.length - (num1.length - 1)));
+                var max = Math.floor(num1.length);
+                var result = Math.floor((Math.random()*(max - min + 1) + min)-1);
+                return num1[result];
+            } else {
+                return Math.floor(Math.random()*(num1 - num2) + num2);
+            }
+        }
+
+
+        console.log(random_range(['a','b','c','d','e']));
+        console.log(random_range(1, 20));
+        console.log(random_range(['jon','jen','joe','sal','ron','car']));
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find Middle String</title>
+    <script>
+        function find_middle_letters(string) {
+            var stringArr = string.split("");
+            if(stringArr.length%2 == 1){
+                return stringArr[Math.floor(stringArr.length/2)];
+            } else {
+                var evenStr = stringArr.splice(((stringArr.length-1)/2),2);
+                return ""+evenStr[0]+evenStr[1]+"";
+            }
+        }
+        console.log(find_middle_letters("Jonathan"));
+        console.log(find_middle_letters("Hello"));
+        console.log(find_middle_letters("Jennifer"));
+        console.log(find_middle_letters("Time"));
+        console.log(find_middle_letters("Space"));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
